@@ -1,6 +1,6 @@
 
 .filter {
-  cursor: pointer;
+   cursor: pointer;
     margin-top: 10px;
     border-bottom: 1px solid #888792;
 }
@@ -17,6 +17,10 @@
 
 h4 {
     margin: 0;
+    color: #565555;
+    ;
+    font-size: 18px;
+
 }
 
 .productCard.skeleton {
@@ -241,11 +245,13 @@ border: none;
   font-weight: 100;
   line-height: 16px;
   text-align: left;
-  font-size: 7px;
+  font-size: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 8px;
   width: 100%;
+  color:  #888792;
+  ;
   }
   }

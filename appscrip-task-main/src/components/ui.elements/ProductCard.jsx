@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./style.css";
+import './style.css';
 import Image from "next/image";
 import { png } from "@/constants/constants";
 

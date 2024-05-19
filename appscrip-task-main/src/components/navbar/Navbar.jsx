@@ -1,9 +1,7 @@
 "use client";
-import React, { useEffect, useState } from "react";
-
-import Styles from "./style.css";
+import React, { useState } from "react";
 import { navbarHeadings } from "@/constants/constants";
-import Link from "next/link";
+import './Style.css';
 
 const Navbar = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -149,8 +147,7 @@ const Navbar = () => {
                 strokeLinejoin="round"
               />
             </svg>
-
-            <select id="Languague">
+             <select id="Languague">
               <option value="Eng">ENG</option>
             </select>
           </span>

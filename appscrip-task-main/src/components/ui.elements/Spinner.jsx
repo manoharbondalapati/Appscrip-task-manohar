@@ -1,4 +1,5 @@
-import style from './style.css'
+import React from 'react';
+import './style.css';
 const Spinner = () => {
     return (
         <div className={"productCard skeleton"}>
