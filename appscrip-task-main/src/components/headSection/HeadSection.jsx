@@ -2,6 +2,10 @@ import React from "react";
 import './style.css';
 const HeadSection = () => {
   return (
+    <>
+    <div className="mobile-header">
+      <p><span>HOME</span> | SHOP</p>
+    </div>
     <div className="headSection-outer">
       <h1>DISCOVER OUR PRODUCTS</h1>
       <p>
@@ -10,6 +14,7 @@ const HeadSection = () => {
       </p>
       <p>Dolor integer scelerisque nibh amet mi ut elementum dolor.</p>
     </div>
+    </>
   );
 };
 

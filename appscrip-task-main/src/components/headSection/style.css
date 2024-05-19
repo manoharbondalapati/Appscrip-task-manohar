@@ -6,7 +6,8 @@
 .headSection-outer h1 {
     font-size: 36px; 
     line-height: 48px; 
-    margin: 10px 0; 
+    margin: 10px 0;
+    font-family: "Simpler Norm";
 }
 
 .headSection-outer p {
@@ -14,9 +15,13 @@
     line-height: 24px; 
     padding: 0 10px;
     margin:  -5px 0px 0px 5px;
+    font-family: "Simpler Norm";
     
 }
-
+.mobile-header
+{
+    display: none;
+}
 
 @media screen and (min-width: 768px) {
     .heroSection-outer {
@@ -28,6 +33,7 @@
         line-height: 60px; 
         margin: 20px 0; 
         font-weight: 300;
+        font-family: "Simpler Norm";
     }
 
     .headSection-outer p {
@@ -35,5 +41,34 @@
         line-height: 30px; 
         padding: 0 100px; 
         margin: 20px 0; 
+        font-family: "Simpler Norm";
     }
+   
+}
+@media   (min-width : 319px) and  (max-width: 760px) 
+{
+   
+    .mobile-header
+    {
+        display: block;
+        line-height: 14.4px;
+        padding-left: 20px;
+
+
+    }
+    .mobile-header p{
+        font-family: 'Simpler Norm';
+        font-size: 12px;
+        color:  #252020;
+        font-weight: 400;
+
+    }
+    .mobile-header span 
+    {
+        color:  #BFC8CD;
+        font-weight: 400;
+        font-size: 12px;
+        
+    }
+    
 }
