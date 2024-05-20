@@ -20,6 +20,11 @@
   font-family: "Simpler Norm";
 }
 
+.mobile-header 
+{
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .heroSection-outer {
     padding: 40px;
@@ -45,22 +50,16 @@
   #mobile {
     display: none;
   }
-  /* .mobile-header {
+  .mobile-header {
     display: block;
     line-height: 14.4px;
-    padding-left: 20px;
-  }
-  .mobile-header p {
-    display: block;
-    font-family: "Simpler Norm";
-    font-size: 12px;
-    color: #252020;
-    font-weight: 400;
-  }
-  .mobile-header span {
-    display: block;
-    color: #bfc8cd;
-    font-weight: 400;
-    font-size: 12px;
-  } */
+    text-align: left;
+    
+ 
+}
+.home-opacity
+{
+  opacity:0.5 ;
+  color: rgb(88, 85, 85);
+}
 }
