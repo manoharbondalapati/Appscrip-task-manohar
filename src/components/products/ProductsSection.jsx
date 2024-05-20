@@ -11,6 +11,7 @@ const ProductsSection = () => {
   const [showRecommend, setShowRecommend] = useState(false);
   const [itemCount, setItemCount] = useState("block");
   const [products, setProducts] = useState();
+  const [isMobile,SetIsMObile]=useState(false);
 
   useEffect(() => {
     (async () => {
@@ -79,8 +80,8 @@ const ProductsSection = () => {
       <div className="header-section">
         <div className="header-inner-div">
           <p style={{ display: `${itemCount}` }}>3425 Items</p>
-          <p className="hide-filter-text" onClick={toggleFilter}>
-            <span>
+          <p className={`hide-filter-text ${isMobile ? 'mobile-filter-text' : ''}`} onClick={toggleFilter} >
+            {!isMobile && (<span>
               <svg
                 width="16"
                 height="16"
@@ -97,7 +98,8 @@ const ProductsSection = () => {
                 />
               </svg>
             </span>
-            {showFilter ? "HIDE FILTER" : "SHOW FILTER"}
+          )}
+            {isMobile ? <span className="mobile-filter-text">FILTER</span>: showFilter ? "HIDE FILTER" : "SHOW FILTER"}
           </p>
         </div>
         <div>

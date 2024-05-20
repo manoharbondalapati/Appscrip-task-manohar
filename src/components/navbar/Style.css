@@ -1,17 +1,16 @@
 .outerLayer {
   background-color: black;
-  color: #eb4c6b;
+  color: #EB4C6B;
   height: 32px;
   text-align: center;
   display: flex;
-  width: 100%;
   justify-content: space-around;
 }
 
 .slide {
   font-size: 12px;
   font-weight: 300;
-  font-family: 'Simpler Norm';
+  font-family: "Poppins", sans-serif;
   line-height: 14.4px;
   letter-spacing: 1px;
   text-align: left;
@@ -30,11 +29,12 @@
 
 .outerNav {
   height: 188px;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #E5E5E5;
 }
 
+
 .big-icon {
-  font-size: 36px;
+  font-size: 26px;
   display: flex;
   gap: 15px;
 }
@@ -45,7 +45,7 @@
 
 .innerNav-top {
   display: flex;
-  font-family:'Simpler Norm';
+  font-family: "Poppins", sans-serif;
   height: 130px;
   font-size: 36px;
   font-weight: 800;
@@ -65,19 +65,18 @@
 
 .small-icons span {
   display: flex;
-  gap: 24px;
 }
 
 .small-icons select {
   display: flex;
   gap: 3px;
-  font-size: 12px;
+  font-size: 15px;
+  font-weight: bold;
   align-items: center;
 }
 
-
 .logo {
-  font-family: 'Simpler Norm';
+  font-family: "Inter", sans-serif;
   font-size: 36px;
   font-weight: 800;
   line-height: 43.57px;
@@ -86,16 +85,19 @@
   left: 50%;
   transform: translateX(-50%);
 }
+
+
 select {
-  -webkit-appearance: none;
+  -moz-appearance: none;
   border: 0;
-  font-size: 10px;
+  font-size: 12px;
   background-color: #fff;
   cursor: pointer;
-  font-weight: bold;
+  font-weight: 500;
 }
+
 select::after {
-  content: "25BC";
+  content: '25BC';
   position: absolute;
   top: 50%;
   right: 10px;
@@ -108,7 +110,6 @@ select::after {
   display: flex;
   justify-content: center;
   padding: 0;
-  font-weight: bold;
 }
 
 .innerNav-bottom ul {
@@ -116,43 +117,51 @@ select::after {
   align-items: center;
   list-style-type: none;
   padding: 0;
+  gap: 35px;
+  
 }
 
 .innerNav-bottom ul li {
   margin: 0 10px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  text-align: left;
+      
+
 }
 
 .innerNav-bottom ul li a {
   text-decoration: none;
   color: #ffffff;
-  font-weight: bold;
-  font-size: 16px;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 1px;
-  text-align: left;
+}
+
+.innerNav-bottom ul li:hover{             
+  text-decoration: underline;
+  
 }
 
 .menu-list {
-  background-color: rgba(255, 255, 255, 0.842);
+  background-color: rgba(255, 255, 255, 0.842); 
   height: 100vh;
-  width: 200px;
+  width: 300px;
   position: fixed;
   top: 0;
-  transition: left 0.3s ease;
-  z-index: 999;
-  backdrop-filter: blur(2px);
+  transition: left 0.3s ease; 
+  z-index: 999; 
+  backdrop-filter: blur(2px); 
 }
 
-.menu-list .open {
-  left: 0;
+.menu-list.open {
+  left: 0; 
 }
 
 .menu-list ul {
-  list-style-type: none;
-  padding: 0;
-  margin-top: 10px;
+  
+  list-style-type: none; 
+  padding: 0; 
+  margin-top: 80px;
 }
 
 .menu-list li {
@@ -169,7 +178,7 @@ select::after {
 
 .close-icon {
   position: absolute;
-  top: -20px;
+  top: 20px;
   right: 20px;
   color: rgb(0, 0, 0);
   cursor: pointer;
@@ -177,19 +186,10 @@ select::after {
   z-index: 1000;
 }
 
+
+
+
 @media screen and (max-width: 710px) {
-  .innerNav-top {
-    display: flex;
-    font-family:'Simpler Norm';
-    height: 130px;
-    font-size: 36px;
-    font-weight: 800;
-    line-height: 43.57px;
-    letter-spacing: 1px;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px 18px 0px 18px;
-  }
   .side {
       display: none;
   }
@@ -197,7 +197,6 @@ select::after {
   .small-icons {
       gap: 12px;
       font-size: 20px;
-
   }
 
   .small-icons span {
@@ -210,6 +209,7 @@ select::after {
 
   .innerNav-top {
       height: 55px;
+      padding: 0px 10px 0px 10px;
   }
 
   .innerNav-bottom ul li {
@@ -218,6 +218,10 @@ select::after {
 
   .menu-icon {
       display: block;
+  }
+
+  .logo{
+      font-size: 70%;
   }
 
 }
@@ -232,5 +236,13 @@ select::after {
   
   padding: 0px 12px 0px 12px;
 }
+.innerNav-bottom ul li:hover{             
+  text-decoration: none;
+  
+}
 }
 
+.innerNav-bottom ul li:hover{             
+  text-decoration: underline;
+  
+}
