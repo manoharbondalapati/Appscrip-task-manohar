@@ -127,8 +127,6 @@
   display: none;
 }
 
-@media screen and (max-width: 900px) {
-}
 
 @media screen and (max-width: 750px) {
   .footer {
@@ -216,8 +214,6 @@
   }
 }
 
-@media screen and (max-width: 650px) {
-}
 @media screen and (max-width: 580px) {
   .footer {
     padding: 0%;
