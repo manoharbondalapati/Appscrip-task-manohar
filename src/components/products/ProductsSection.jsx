@@ -33,8 +33,10 @@ const ProductsSection = () => {
       } else if (window.innerWidth < 1024) {
         setItemCount("none");
         newGrid = "repeat(3, 1fr)";
+        SetIsMObile(false);
       } else {
         setItemCount("block");
+        SetIsMObile(false);
       }
 
       // Adjust grid based on showFilter state
@@ -99,7 +101,7 @@ const ProductsSection = () => {
               </svg>
             </span>
           )}
-            {isMobile ? <span className="mobile-filter-text">FILTER</span>: showFilter ? "HIDE FILTER" : "SHOW FILTER"}
+            {isMobile ? <span className="mobile-filter-text">FILTER</span>:showFilter ? "HIDE FILTER" : "SHOW FILTER"}
           </p>
         </div>
         <div>
