@@ -3,7 +3,7 @@
    cursor: pointer;
     margin-top: 10px;
     border-bottom: 1px solid #888792;
-}
+    
 
 .filter p {
     font-size: 16px;
@@ -12,6 +12,8 @@
     text-align: left;
     color: #888792;
     text-decoration: underline;
+    font-family: 'Simpler Norm';
+}
     
 
 }
@@ -60,8 +62,10 @@ h4 {
     font-weight: 400;
     line-height: 19.2px;
     text-align: left;
+    font-family: 'Simpler Norm';
+  }
 
-}
+
 
 .accordionHeaderSection {
     display: flex;
@@ -103,7 +107,7 @@ h4 {
 .productTitle {
     margin: 0;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 400;
     width: 200px; 
     overflow: hidden;
     text-overflow: ellipsis;

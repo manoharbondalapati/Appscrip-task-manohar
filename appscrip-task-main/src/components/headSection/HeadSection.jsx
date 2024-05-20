@@ -10,9 +10,8 @@ const HeadSection = () => {
       <h1>DISCOVER OUR PRODUCTS</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur. Amet est posuere rhoncus
-        scelerisque.
       </p>
-      <p>Dolor integer scelerisque nibh amet mi ut elementum dolor.</p>
+      <p id="mobile">Dolor integer scelerisque nibh amet mi ut elementum dolor scelerisque.</p>
     </div>
     </>
   );

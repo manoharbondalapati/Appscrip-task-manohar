@@ -1,7 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import { navbarHeadings } from "@/constants/constants";
-import './Style.css';
+import { MdKeyboardArrowDown } from "react-icons/md";
+import "./Style.css";
 
 const Navbar = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -147,7 +148,7 @@ const Navbar = () => {
                 strokeLinejoin="round"
               />
             </svg>
-             <select id="Languague">
+            <select id="Languague">
               <option value="Eng">ENG</option>
               <option value="tel">TEL</option>
             </select>
@@ -182,4 +183,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
