@@ -1,5 +1,5 @@
 import Image from "next/image";
-import './style.css';
+import "./style.css";
 import { png, footerNavMeta, footerNavQuick } from "@/constants/constants";
 const Footer = () => {
   return (

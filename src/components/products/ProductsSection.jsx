@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import './style.css';
+import "./style.css";
 import ProductCard from "../ui.elements/ProductCard";
 import Filter from "../ui.elements/filter";
 import { Recommended, filters } from "@/constants/constants";
@@ -11,7 +11,7 @@ const ProductsSection = () => {
   const [showRecommend, setShowRecommend] = useState(false);
   const [itemCount, setItemCount] = useState("block");
   const [products, setProducts] = useState();
-  const [isMobile,SetIsMObile]=useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     (async () => {
@@ -27,16 +27,16 @@ const ProductsSection = () => {
     const handleResize = () => {
       let newGrid = "repeat(4, 1fr)";
       if (window.innerWidth < 768) {
-        
         setItemCount("none");
         newGrid = "repeat(2, 1fr)";
+        setIsMobile(true); // Set to true when mobile
       } else if (window.innerWidth < 1024) {
         setItemCount("none");
         newGrid = "repeat(3, 1fr)";
-        SetIsMObile(false);
+        setIsMobile(false); // Set to false when not mobile
       } else {
         setItemCount("block");
-        SetIsMObile(false);
+        setIsMobile(false); // Set to false when not mobile
       }
 
       // Adjust grid based on showFilter state
@@ -73,6 +73,7 @@ const ProductsSection = () => {
   const toggleFilter = () => {
     setShowFilter(!showFilter);
   };
+
   const handleRecommend = () => {
     setShowRecommend(!showRecommend);
   };
@@ -82,26 +83,36 @@ const ProductsSection = () => {
       <div className="header-section">
         <div className="header-inner-div">
           <p style={{ display: `${itemCount}` }}>3425 Items</p>
-          <p className={`hide-filter-text ${isMobile ? 'mobile-filter-text' : ''}`} onClick={toggleFilter} >
-            {!isMobile && (<span>
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M9.99986 2.72125L5.65319 7.06792C5.13986 7.58125 5.13986 8.42125 5.65319 8.93458L9.99986 13.2812"
-                  stroke="#292D32"
-                  strokeMiterlimit="10"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </span>
-          )}
-            {isMobile ? <span className="mobile-filter-text">FILTER</span>:showFilter ? "HIDE FILTER" : "SHOW FILTER"}
+          <p
+            className={`hide-filter-text ${isMobile ? "mobile-filter" : ""}`}
+            onClick={toggleFilter}
+          >
+            {!isMobile && (
+              <span>
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.99986 2.72125L5.65319 7.06792C5.13986 7.58125 5.13986 8.42125 5.65319 8.93458L9.99986 13.2812"
+                    stroke="#292D32"
+                    strokeMiterlimit="10"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </span>
+            )}
+            {isMobile ? (
+              <span className="mobile-filter">FILTER</span>
+            ) : showFilter ? (
+              "HIDE FILTER"
+            ) : (
+              "SHOW FILTER"
+            )}
           </p>
         </div>
         <div>
@@ -151,7 +162,7 @@ const ProductsSection = () => {
             <div className="filter-section">
               <div className="checkbox-container">
                 <input type="checkbox" id="checkbox" />
-                <label for="checkbox">Customizble</label>
+                <label htmlFor="checkbox">Customizble</label>
               </div>
               {filters.map((filter, index) => (
                 <Filter key={index} filter={filter} />

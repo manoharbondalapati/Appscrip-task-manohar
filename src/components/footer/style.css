@@ -99,7 +99,6 @@
   flex-direction: column;
   height: 100%;
   row-gap: 16px;
-  
 }
 .bottomFooter-firstOne,
 .bottomFooter-secondOne {
@@ -128,9 +127,7 @@
   display: none;
 }
 
-
 @media screen and (max-width: 750px) {
-  
   .footer {
     padding: 0%;
     padding-top: 10px;

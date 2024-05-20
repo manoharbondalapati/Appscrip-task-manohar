@@ -1,6 +1,6 @@
 .outerLayer {
   background-color: black;
-  color: #EB4C6B;
+  color: #eb4c6b;
   height: 32px;
   text-align: center;
   display: flex;
@@ -29,9 +29,8 @@
 
 .outerNav {
   height: 188px;
-  border-bottom: 1px solid #E5E5E5;
+  border-bottom: 1px solid #e5e5e5;
 }
-
 
 .big-icon {
   font-size: 26px;
@@ -86,7 +85,6 @@
   transform: translateX(-50%);
 }
 
-
 select {
   -moz-appearance: none;
   border: 0;
@@ -97,7 +95,7 @@ select {
 }
 
 select::after {
-  content: '25BC';
+  content: "25BC";
   position: absolute;
   top: 50%;
   right: 10px;
@@ -118,7 +116,6 @@ select::after {
   list-style-type: none;
   padding: 0;
   gap: 35px;
-  
 }
 
 .innerNav-bottom ul li {
@@ -128,8 +125,6 @@ select::after {
   line-height: 24px;
   letter-spacing: 1px;
   text-align: left;
-      
-
 }
 
 .innerNav-bottom ul li a {
@@ -137,30 +132,28 @@ select::after {
   color: #ffffff;
 }
 
-.innerNav-bottom ul li:hover{             
+.innerNav-bottom ul li:hover {
   text-decoration: underline;
-  
 }
 
 .menu-list {
-  background-color: rgba(255, 255, 255, 0.842); 
+  background-color: rgba(255, 255, 255, 0.842);
   height: 100vh;
   width: 300px;
   position: fixed;
   top: 0;
-  transition: left 0.3s ease; 
-  z-index: 999; 
-  backdrop-filter: blur(2px); 
+  transition: left 0.3s ease;
+  z-index: 999;
+  backdrop-filter: blur(2px);
 }
 
 .menu-list.open {
-  left: 0; 
+  left: 0;
 }
 
 .menu-list ul {
-  
-  list-style-type: none; 
-  padding: 0; 
+  list-style-type: none;
+  padding: 0;
   margin-top: 80px;
 }
 
@@ -186,63 +179,55 @@ select::after {
   z-index: 1000;
 }
 
-
-
-
 @media screen and (max-width: 710px) {
   .side {
-      display: none;
+    display: none;
   }
 
   .small-icons {
-      gap: 12px;
-      font-size: 20px;
+    gap: 12px;
+    font-size: 20px;
   }
 
   .small-icons span {
-      display: none;
+    display: none;
   }
 
   .outerNav {
-      height: 55px;
+    height: 55px;
   }
 
   .innerNav-top {
-      height: 55px;
-      padding: 0px 10px 0px 10px;
+    height: 55px;
+    padding: 0px 10px 0px 10px;
   }
 
   .innerNav-bottom ul li {
-      display: none;
+    display: none;
   }
 
   .menu-icon {
-      display: block;
+    display: block;
   }
 
-  .logo{
-      font-size: 70%;
+  .logo {
+    font-size: 70%;
   }
-
 }
-@media screen and (max-width: 375px) {
 
+@media screen and (max-width: 375px) {
   .small-icons {
     gap: 5px;
     font-size: 20px;
-
-}
-.innerNav-top {
-  
-  padding: 0px 12px 0px 12px;
-}
-.innerNav-bottom ul li:hover{             
-  text-decoration: none;
-  
-}
+  }
+  .innerNav-top {
+    padding: 0px 12px 0px 12px;
+  }
+  .innerNav-bottom ul li:hover {
+    text-decoration: none;
+  }
 }
 
-.innerNav-bottom ul li:hover{             
+.innerNav-bottom ul li:hover {
   text-decoration: underline;
-  
 }

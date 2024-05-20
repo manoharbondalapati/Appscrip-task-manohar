@@ -1,6 +1,6 @@
 "use state";
 import React, { useState } from "react";
-import './style.css';
+import "./style.css";
 
 const Filter = ({ filter }) => {
   const [openSemi, setOpenSemi] = useState(false);

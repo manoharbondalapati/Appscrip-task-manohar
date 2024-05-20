@@ -1,4 +1,3 @@
-// import Image from "next/image";
 import styles from "./page.module.css";
 import ProductsSection from "@/components/products/ProductsSection";
 import HeadSection from "@/components/headSection/HeadSection";
