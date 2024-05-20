@@ -129,6 +129,7 @@
 
 
 @media screen and (max-width: 750px) {
+  
   .footer {
     padding: 0%;
     padding-top: 10px;
@@ -153,7 +154,6 @@
     display: flex;
     flex-direction: column;
     padding: 10px 50px;
-
     align-items: start;
     border-bottom: none;
   }

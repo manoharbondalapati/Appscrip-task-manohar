@@ -92,14 +92,12 @@
   left: 50%;
   transform: translateX(-50%);
 }
-
 select {
   -webkit-appearance: none;
-   border: 0;
+  border: 0;
   font-size: 10px;
   background-color: #fff;
   cursor: pointer;
-  font-weight: 500;
   font-weight: bold;
 }
 select::after {
@@ -186,6 +184,18 @@ select::after {
 }
 
 @media screen and (max-width: 710px) {
+  .innerNav-top {
+    display: flex;
+    font-family:'Simpler Norm';
+    height: 130px;
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 43.57px;
+    letter-spacing: 1px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 18px 0px 18px;
+  }
   .side {
       display: none;
   }
@@ -217,6 +227,7 @@ select::after {
   }
 
 }
+
 /* @media screen and (min-width:376px) and (max-width: 425px) {
   .side {
     display: none;
